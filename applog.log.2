@@ -1,0 +1,387 @@
+2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|7
+2021-05-20 22:04:53|   DEBUG|testAction.py[:274]|371
+2021-05-20 22:04:53|   DEBUG|testAction.py[:275]|378
+2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|55
+2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|7
+2021-05-20 22:04:53|   DEBUG|testAction.py[:274]|378
+2021-05-20 22:04:53|   DEBUG|testAction.py[:275]|385
+2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
+2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
+2021-05-20 22:04:53|   DEBUG|testAction.py[:274]|0
+2021-05-20 22:04:53|   DEBUG|testAction.py[:275]|20
+2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
+2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
+2021-05-20 22:04:53|   ERROR|log.py[:224]|Internal Server Error: /orderQueryApi/
+Traceback (most recent call last):
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 247, in orderQueryApi
+    count, dataList = order_query_func(json_data)
+  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 271, in order_query_func
+    count = OrderInfo.objects.filter(**queryFilter).count()
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1217, in get_prep_value
+    return self.to_python(value)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1189, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“2010/02/01” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
+2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
+2021-05-20 22:04:53|   ERROR|log.py[:224]|Internal Server Error: /orderQueryApi/
+Traceback (most recent call last):
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 247, in orderQueryApi
+    count, dataList = order_query_func(json_data)
+  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 271, in order_query_func
+    count = OrderInfo.objects.filter(**queryFilter).count()
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1217, in get_prep_value
+    return self.to_python(value)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1189, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“123456” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
+2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
+2021-05-20 22:04:53|   ERROR|log.py[:224]|Internal Server Error: /orderQueryApi/
+Traceback (most recent call last):
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 247, in orderQueryApi
+    count, dataList = order_query_func(json_data)
+  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 271, in order_query_func
+    count = OrderInfo.objects.filter(**queryFilter).count()
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1217, in get_prep_value
+    return self.to_python(value)
+  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1189, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“19-1-2” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 340
+2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "综合办公室",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 673
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 673}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 340
+2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "综合办公室",
+    "order_date": "2021-05-26",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 674
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 674}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 340
+2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "综合办公室",
+    "order_date": "2021-05-22",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 675
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 675}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 328
+2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "科技部",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 676
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 676}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 334
+2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "人力部门",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 677
+}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 677}
+2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 328
+2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "保卫部",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 678
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 678}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 340
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "党群工作部",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 679
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 679}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 328
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "财务部",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 680
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 680}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 328
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "科技部",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "系统优化",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 681
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 681}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 328
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "科技部",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "关联的应用系统",
+    "order_type": "新增需求",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 682
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 682}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 286
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "科技部",
+    "order_date": "2021-05-20",
+    "order_name": "测试需求名称",
+    "order_sys": "",
+    "order_type": "新增需求",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "000000",
+    "msg": "Success",
+    "order_id": 683
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 683}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 286
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "综合办公室",
+    "order_date": "2021-05-20",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|   ERROR|SocketServer.py[:78]|需求名称必输.
+Traceback (most recent call last):
+  File "D:\PycharmProjects\testProject\testProject\SocketServer.py", line 61, in handle
+    raise RuntimeError("需求名称必输.")
+RuntimeError: 需求名称必输.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "500004",
+    "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000066{"code": "500004", "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 304
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "综合办公室",
+    "order_date": "2021-05-20",
+    "order_name": "",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
+2021-05-20 22:04:54|   ERROR|SocketServer.py[:78]|需求名称必输.
+Traceback (most recent call last):
+  File "D:\PycharmProjects\testProject\testProject\SocketServer.py", line 61, in handle
+    raise RuntimeError("需求名称必输.")
+RuntimeError: 需求名称必输.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
+{
+    "code": "500004",
+    "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."
+}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000066{"code": "500004", "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."}
+2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
+2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 307
+2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
+{
+    "order_dep": "综合办公室",
+    "order_date": "2021-05-20",
+    "order_name": "   ",
+    "order_sys": "关联的应用系统",
+    "order_type": "需求变更",
+    "order_desc": "需求描述内容具体的情况",
+    "service": "createOrder"
+}
