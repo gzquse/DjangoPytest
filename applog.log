@@ -1,217 +1,303 @@
-2022-03-24 02:16:53|   ERROR|log.py[:224]|Internal Server Error: /rand_code/
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
 Traceback (most recent call last):
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
-    return self.cursor.execute(sql, params)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 73, in execute
-    return self.cursor.execute(query, args)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/cursors.py", line 163, in execute
-    result = self._query(query)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/cursors.py", line 321, in _query
-    conn.query(q)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 505, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 724, in _read_query_result
-    result.read()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 1069, in read
-    first_packet = self.connection._read_packet()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 676, in _read_packet
-    packet.raise_for_error()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/protocol.py", line 223, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.ProgrammingError: (1146, "Table 'demodb.django_session' doesn't exist")
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:03:36|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-02 08:07:35|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
+2022-05-02 08:07:35|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
+2022-05-04 06:24:43|   DEBUG|testAction.py[:57]|admin
+2022-05-04 06:24:43|   DEBUG|testAction.py[:58]|123456
+2022-05-04 06:24:44|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|'order_dep'
+Traceback (most recent call last):
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'order_dep'
 
-The above exception was the direct cause of the following exception:
+During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/deprecation.py", line 116, in __call__
-    response = self.process_response(request, response)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/contrib/sessions/middleware.py", line 63, in process_response
-    request.session.save()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/contrib/sessions/backends/db.py", line 81, in save
-    return self.create()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/contrib/sessions/backends/db.py", line 51, in create
-    self._session_key = self._get_new_session_key()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/contrib/sessions/backends/base.py", line 178, in _get_new_session_key
-    if not self.exists(session_key):
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/contrib/sessions/backends/db.py", line 47, in exists
-    return self.model.objects.filter(session_key=session_key).exists()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/models/query.py", line 809, in exists
-    return self.query.has_results(using=self.db)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/models/sql/query.py", line 535, in has_results
-    return compiler.has_results()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1124, in has_results
-    return bool(self.execute_sql(SINGLE))
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1154, in execute_sql
-    cursor.execute(sql, params)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
-    return super().execute(sql, params)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
-    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
-    return self.cursor.execute(sql, params)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
-    return self.cursor.execute(sql, params)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 73, in execute
-    return self.cursor.execute(query, args)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/cursors.py", line 163, in execute
-    result = self._query(query)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/cursors.py", line 321, in _query
-    conn.query(q)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 505, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 724, in _read_query_result
-    result.read()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 1069, in read
-    first_packet = self.connection._read_packet()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 676, in _read_packet
-    packet.raise_for_error()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/protocol.py", line 223, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
-    raise errorclass(errno, errval)
-django.db.utils.ProgrammingError: (1146, "Table 'demodb.django_session' doesn't exist")
-2022-03-24 02:19:06|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
-2022-03-24 02:22:26|    INFO|testAction.py[:99]|response json: {'code': 0}
-2022-03-24 02:23:06|   DEBUG|testAction.py[:57]|admin
-2022-03-24 02:23:06|   DEBUG|testAction.py[:58]|123456
-2022-03-24 02:23:06|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-03-24 02:23:06|    INFO|testAction.py[:105]|载入主页面...
-2022-03-24 02:24:50|   ERROR|testAction.py[:148]|日期不在允许范围内
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 122, in orderAddCommit
+    order_dep = request.POST['order_dep']
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'order_dep'
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
 Traceback (most recent call last):
   File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
     raise Exception("日期不在允许范围内")
 Exception: 日期不在允许范围内
-2022-03-24 02:24:55|   ERROR|testAction.py[:148]|日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
 Traceback (most recent call last):
   File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
     raise Exception("日期不在允许范围内")
 Exception: 日期不在允许范围内
-2022-03-24 02:25:05|   ERROR|testAction.py[:148]|日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
 Traceback (most recent call last):
   File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
     raise Exception("日期不在允许范围内")
 Exception: 日期不在允许范围内
-2022-03-24 02:34:24|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
-2022-03-24 02:34:36| WARNING|log.py[:224]|Not Found: /
-2022-03-24 02:34:40|    INFO|testAction.py[:105]|载入主页面...
-2022-04-05 11:08:26| WARNING|log.py[:224]|Not Found: /
-2022-04-05 11:08:27| WARNING|log.py[:224]|Not Found: /favicon.ico
-2022-04-05 11:08:55|   DEBUG|testAction.py[:57]|asd
-2022-04-05 11:08:55|   DEBUG|testAction.py[:58]|asd
-2022-04-05 11:08:55|   ERROR|testAction.py[:73]|用户名或密码错误
-Traceback (most recent call last):
-  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
-    raise RuntimeError("用户名或密码错误")
-RuntimeError: 用户名或密码错误
-2022-04-05 11:08:55|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '用户名或密码错误'}
-2022-04-05 11:11:26|   DEBUG|testAction.py[:57]|admin
-2022-04-05 11:11:26|   DEBUG|testAction.py[:58]|12345
-2022-04-05 11:11:26|   ERROR|testAction.py[:73]|用户名或密码错误
-Traceback (most recent call last):
-  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
-    raise RuntimeError("用户名或密码错误")
-RuntimeError: 用户名或密码错误
-2022-04-05 11:11:26|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '用户名或密码错误'}
-2022-04-05 11:12:27|   DEBUG|testAction.py[:57]|admin
-2022-04-05 11:12:27|   DEBUG|testAction.py[:58]|12345
-2022-04-05 11:12:27|   ERROR|testAction.py[:73]|用户名或密码错误
-Traceback (most recent call last):
-  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
-    raise RuntimeError("用户名或密码错误")
-RuntimeError: 用户名或密码错误
-2022-04-05 11:12:27|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '用户名或密码错误'}
-2022-04-05 11:23:59|   DEBUG|testAction.py[:57]|admin
-2022-04-05 11:23:59|   DEBUG|testAction.py[:58]|123465
-2022-04-05 11:23:59|   ERROR|testAction.py[:73]|用户名或密码错误
-Traceback (most recent call last):
-  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
-    raise RuntimeError("用户名或密码错误")
-RuntimeError: 用户名或密码错误
-2022-04-05 11:23:59|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '用户名或密码错误'}
-2022-04-05 11:24:06|   DEBUG|testAction.py[:57]|admin
-2022-04-05 11:24:06|   DEBUG|testAction.py[:58]|123456
-2022-04-05 11:24:07|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-05 11:24:07|    INFO|testAction.py[:105]|载入主页面...
-2022-04-05 11:24:18|   DEBUG|testAction.py[:218]|1
-2022-04-05 11:24:18|   DEBUG|testAction.py[:219]|10
-2022-04-05 11:24:18|   DEBUG|testAction.py[:223]|0
-2022-04-05 11:24:18|   DEBUG|testAction.py[:224]|10
-2022-04-05 11:24:24| WARNING|log.py[:224]|Not Found: /user/info/
-2022-04-05 11:24:27| WARNING|log.py[:224]|Not Found: /main/
-2022-04-05 11:27:08|   DEBUG|testAction.py[:57]|admin
-2022-04-05 11:27:08|   DEBUG|testAction.py[:58]|123456
-2022-04-05 11:27:08|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-05 11:32:59|   DEBUG|testAction.py[:57]|admin
-2022-04-05 11:32:59|   DEBUG|testAction.py[:58]|123456
-2022-04-05 11:32:59|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-05 11:33:08|   DEBUG|testAction.py[:57]|admin
-2022-04-05 11:33:08|   DEBUG|testAction.py[:58]|123456
-2022-04-05 11:33:09|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-05 11:38:55|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
-2022-04-14 08:17:07|   DEBUG|testAction.py[:57]|admin
-2022-04-14 08:17:07|   DEBUG|testAction.py[:58]|123456
-2022-04-14 08:17:07|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-14 08:17:07|   ERROR|testAction.py[:148]|日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
 Traceback (most recent call last):
   File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
     raise Exception("日期不在允许范围内")
 Exception: 日期不在允许范围内
-2022-04-14 08:43:05|   DEBUG|testAction.py[:57]|admin
-2022-04-14 08:43:05|   DEBUG|testAction.py[:58]|123456
-2022-04-14 08:43:06|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-14 08:43:30|   DEBUG|testAction.py[:57]|admin
-2022-04-14 08:43:30|   DEBUG|testAction.py[:58]|123456
-2022-04-14 08:43:30|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-14 08:47:07|   DEBUG|testAction.py[:57]|admin
-2022-04-14 08:47:07|   DEBUG|testAction.py[:58]|123456
-2022-04-14 08:47:07|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-14 08:49:11|   DEBUG|testAction.py[:57]|admin
-2022-04-14 08:49:11|   DEBUG|testAction.py[:58]|123456
-2022-04-14 08:49:11|    INFO|testAction.py[:78]|response json: {'code': 0}
-2022-04-14 08:49:38| WARNING|log.py[:224]|Not Found: /favicon.ico
-2022-04-14 08:51:58|    INFO|SocketServer.py[:44]|请求报文长度: 202
-2022-04-14 08:51:58|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "service": "createOrder",
-    "order_dep": "001",
-    "order_date": "2021-08-02",
-    "order_name": "需求名称",
-    "order_sys": "sys",
-    "order_type": "change",
-    "order_desc": "描述信息"
-}
-2022-04-14 08:51:58|   ERROR|SocketServer.py[:78]|'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|'order_date'
 Traceback (most recent call last):
-  File "/Users/ziqguo/Documents/testdev/testProject/testProject/SocketServer.py", line 72, in handle
-    newId = create_order(params)
-  File "/Users/ziqguo/Documents/testdev/testProject/testProject/SocketServer.py", line 16, in create_order
-    conn = pymysql.connect("localhost", "root", "root", "testproject")
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/__init__.py", line 94, in Connect
-    return Connection(*args, **kwargs)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 327, in __init__
-    self.connect()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 588, in connect
-    self._request_authentication()
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/connections.py", line 874, in _request_authentication
-    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/_auth.py", line 323, in caching_sha2_password_auth
-    data = sha2_rsa_encrypt(conn.password, conn.salt, conn.server_public_key)
-  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/pymysql/_auth.py", line 201, in sha2_rsa_encrypt
-    raise RuntimeError("'cryptography' package is required for sha256_password or caching_sha2_password auth methods")
-RuntimeError: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
-2022-04-14 08:51:58|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "999999",
-    "msg": "'cryptography' package is required for sha256_password or caching_sha2_password auth methods"
-}
-2022-04-14 08:51:58|    INFO|SocketServer.py[:85]|应答报文: 0000000121{"code": "999999", "msg": "'cryptography' package is required for sha256_password or caching_sha2_password auth methods"}
-2022-04-14 08:51:58|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2022-04-14 11:04:34|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'order_date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 124, in orderAddCommit
+    order_date = request.POST['order_date']
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'order_date'
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:44|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:45|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:45|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:24:45|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   DEBUG|testAction.py[:57]|admin
+2022-05-04 06:31:27|   DEBUG|testAction.py[:58]|123456
+2022-05-04 06:31:27|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|'order_dep'
+Traceback (most recent call last):
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'order_dep'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 122, in orderAddCommit
+    order_dep = request.POST['order_dep']
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'order_dep'
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|'order_date'
+Traceback (most recent call last):
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'order_date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 124, in orderAddCommit
+    order_date = request.POST['order_date']
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'order_date'
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|日期不在允许范围内
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 131, in orderAddCommit
+    raise Exception("日期不在允许范围内")
+Exception: 日期不在允许范围内
+2022-05-04 06:31:27|   ERROR|testAction.py[:148]|'order_desc'
+Traceback (most recent call last):
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'order_desc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 134, in orderAddCommit
+    order_desc = request.POST['order_desc']
+  File "/Users/ziqguo/opt/anaconda3/envs/testProject/lib/python3.9/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'order_desc'

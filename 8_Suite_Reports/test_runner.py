@@ -6,13 +6,15 @@
 """
 import unittest
 import os
+
+# from HtmlTestRunner import HTMLTestRunner
+from MyHTMLTestRunner import HTMLTestRunner
+
 from MyTestCase1 import TestCase1
 from MyTestCase2 import TestCase2
 import MyTestCaseModule
 
-# from HtmlTestRunner import HTMLTestRunner
-# from HTMLTestRunner import HTMLTestRunner
-from MyHTMLTestRunner import HTMLTestRunner
+
 
 # 测试套件和测试执行器
 # 测试套件要写在单独的文件中
@@ -35,14 +37,14 @@ suite = unittest.TestSuite()
 # ]
 # # list tuple set
 # # 推荐直接使用list []来组合我们的测试方法
-cases1 = [
-    TestCase1("test_1"),
-    TestCase1("test_2"),
-    TestCase1("test_3"),
-    TestCase2("test_2"),
-    TestCase2("test_3"),
-    TestCase2("test_4")
-]
+# cases1 = [
+#     TestCase1("test_1"),
+#     TestCase1("test_2"),
+#     TestCase1("test_3"),
+#     TestCase2("test_2"),
+#     TestCase2("test_3"),
+#     TestCase2("test_4")
+# ]
 # suite.addTests(cases1)
 
 # 第三种方法：按照测试用例的级别来添加
@@ -55,8 +57,8 @@ cases1 = [
 # suite.addTests(unittest.TestLoader().loadTestsFromModule(MyTestCaseModule))
 
 # 实例化测试执行器
-runner = unittest.TextTestRunner()
-runner.run(suite)
+# runner = unittest.TextTestRunner()
+# runner.run(suite)
 
 # 第四种方法：遍历目录，来获取所有的测试模块和测试方法
 # 要指定一个目录
@@ -94,18 +96,27 @@ runner.run(suite)
 # 第631行：print >>sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime) 改成 print('\nTime Elapsed: %s' % (self.stopTime-self.startTime),file=sys.stderr)
 # 第118行：self.fp.write(s) 改为 self.fp.write(bytes(s,'UTF-8'))
 
-# report_path = "./reports/"
+report_path = "./reports/"
 # report_file = report_path + "html_report.html"
-# report_file = report_path + "html_report_cust.html"
+report_file = report_path + "html_report_cust.html"
 
 # 如果目录不存在，创建
-# if not os.path.exists(report_path):
-#     os.mkdir(report_path)
+if not os.path.exists(report_path):
+    os.mkdir(report_path)
 #
-# with open(report_file, "wb") as reportFile:
-#     module_path = "./"
-#     discorver = unittest.defaultTestLoader.discover(start_dir=module_path, pattern="MyTest*.py")
-#     runner = HTMLTestRunner(title="演示测试报告", description="描述一下测试场景和环境", stream=reportFile)
-#     runner.run(discorver)
+with open(report_file, "wb") as reportFile:
+    module_path = "./"
+    discorver = unittest.defaultTestLoader.discover(start_dir=module_path, pattern="MyTest*.py")
+    runner = HTMLTestRunner(title="演示测试报告", description="描述一下测试场景和环境", stream=reportFile)
+    runner.run(discorver)
 
 # 更多的html测试报告执行器，可以自定义或者去找资源
+
+# module_path = "./"
+# discover = unittest.defaultTestLoader.discover(start_dir=module_path, pattern="MyTest*.py")
+# runner = HTMLTestRunner(output="htmlreports",
+#                         combine_reports=True,
+#                         add_timestamp=False,
+#                         report_name="report test",
+#                         report_title='demo of report')
+# runner.run(discover)

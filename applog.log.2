@@ -1,387 +1,317 @@
-2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|7
-2021-05-20 22:04:53|   DEBUG|testAction.py[:274]|371
-2021-05-20 22:04:53|   DEBUG|testAction.py[:275]|378
-2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|55
-2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|7
-2021-05-20 22:04:53|   DEBUG|testAction.py[:274]|378
-2021-05-20 22:04:53|   DEBUG|testAction.py[:275]|385
-2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
-2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
-2021-05-20 22:04:53|   DEBUG|testAction.py[:274]|0
-2021-05-20 22:04:53|   DEBUG|testAction.py[:275]|20
-2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
-2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
-2021-05-20 22:04:53|   ERROR|log.py[:224]|Internal Server Error: /orderQueryApi/
+2022-04-28 06:58:20|   DEBUG|testAction.py[:57]|sniper
+2022-04-28 06:58:20|   DEBUG|testAction.py[:58]|123
+2022-04-28 06:58:20|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
 Traceback (most recent call last):
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 247, in orderQueryApi
-    count, dataList = order_query_func(json_data)
-  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 271, in order_query_func
-    count = OrderInfo.objects.filter(**queryFilter).count()
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 942, in filter
-    return self._filter_or_exclude(False, *args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 962, in _filter_or_exclude
-    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 969, in _filter_or_exclude_inplace
-    self._query.add_q(Q(*args, **kwargs))
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1358, in add_q
-    clause, _ = self._add_q(q_object, self.used_aliases)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1377, in _add_q
-    child_clause, needed_inner = self.build_filter(
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_filter
-    condition = self.build_lookup(lookups, col, value)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1165, in build_lookup
-    lookup = lookup_class(lhs, rhs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
-    self.rhs = self.get_prep_lookup()
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
-    return self.lhs.output_field.get_prep_value(self.rhs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1217, in get_prep_value
-    return self.to_python(value)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1189, in to_python
-    raise exceptions.ValidationError(
-django.core.exceptions.ValidationError: ['“2010/02/01” value has an invalid date format. It must be in YYYY-MM-DD format.']
-2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
-2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
-2021-05-20 22:04:53|   ERROR|log.py[:224]|Internal Server Error: /orderQueryApi/
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-28 06:58:20|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-28 07:01:05|   DEBUG|testAction.py[:57]|admin
+2022-04-28 07:01:05|   DEBUG|testAction.py[:58]|123456
+2022-04-28 07:01:05|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-28 07:01:05|   DEBUG|testAction.py[:57]|sniper
+2022-04-28 07:01:05|   DEBUG|testAction.py[:58]|111111
+2022-04-28 07:01:05|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-28 07:01:05|   DEBUG|testAction.py[:57]|sniper
+2022-04-28 07:01:05|   DEBUG|testAction.py[:58]|123
+2022-04-28 07:01:05|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
 Traceback (most recent call last):
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 247, in orderQueryApi
-    count, dataList = order_query_func(json_data)
-  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 271, in order_query_func
-    count = OrderInfo.objects.filter(**queryFilter).count()
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 942, in filter
-    return self._filter_or_exclude(False, *args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 962, in _filter_or_exclude
-    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 969, in _filter_or_exclude_inplace
-    self._query.add_q(Q(*args, **kwargs))
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1358, in add_q
-    clause, _ = self._add_q(q_object, self.used_aliases)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1377, in _add_q
-    child_clause, needed_inner = self.build_filter(
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_filter
-    condition = self.build_lookup(lookups, col, value)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1165, in build_lookup
-    lookup = lookup_class(lhs, rhs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
-    self.rhs = self.get_prep_lookup()
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
-    return self.lhs.output_field.get_prep_value(self.rhs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1217, in get_prep_value
-    return self.to_python(value)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1189, in to_python
-    raise exceptions.ValidationError(
-django.core.exceptions.ValidationError: ['“123456” value has an invalid date format. It must be in YYYY-MM-DD format.']
-2021-05-20 22:04:53|   DEBUG|testAction.py[:268]|1
-2021-05-20 22:04:53|   DEBUG|testAction.py[:269]|20
-2021-05-20 22:04:53|   ERROR|log.py[:224]|Internal Server Error: /orderQueryApi/
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-28 07:01:05|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:12:06|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
+2022-04-29 06:12:14| WARNING|log.py[:224]|Not Found: /
+2022-04-29 06:12:14| WARNING|log.py[:224]|Not Found: /favicon.ico
+2022-04-29 06:12:18| WARNING|log.py[:224]|Not Found: /index
+2022-04-29 06:30:56|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:30:56|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:30:56|   ERROR|testAction.py[:73]|[Errno 32] Broken pipe
 Traceback (most recent call last):
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 247, in orderQueryApi
-    count, dataList = order_query_func(json_data)
-  File "D:\PycharmProjects\testProject\testProject\testAction.py", line 271, in order_query_func
-    count = OrderInfo.objects.filter(**queryFilter).count()
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 942, in filter
-    return self._filter_or_exclude(False, *args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 962, in _filter_or_exclude
-    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\query.py", line 969, in _filter_or_exclude_inplace
-    self._query.add_q(Q(*args, **kwargs))
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1358, in add_q
-    clause, _ = self._add_q(q_object, self.used_aliases)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1377, in _add_q
-    child_clause, needed_inner = self.build_filter(
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_filter
-    condition = self.build_lookup(lookups, col, value)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\sql\query.py", line 1165, in build_lookup
-    lookup = lookup_class(lhs, rhs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
-    self.rhs = self.get_prep_lookup()
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
-    return self.lhs.output_field.get_prep_value(self.rhs)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1217, in get_prep_value
-    return self.to_python(value)
-  File "D:\PycharmProjects\testProject\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1189, in to_python
-    raise exceptions.ValidationError(
-django.core.exceptions.ValidationError: ['“19-1-2” value has an invalid date format. It must be in YYYY-MM-DD format.']
-2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 340
-2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "综合办公室",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 673
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 673}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 340
-2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "综合办公室",
-    "order_date": "2021-05-26",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 674
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 674}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 340
-2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "综合办公室",
-    "order_date": "2021-05-22",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 675
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 675}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 328
-2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "科技部",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 676
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 676}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 334
-2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "人力部门",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 677
-}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 677}
-2021-05-20 22:04:53|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:53|    INFO|SocketServer.py[:44]|请求报文长度: 328
-2021-05-20 22:04:53|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "保卫部",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 678
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 678}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 340
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "党群工作部",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 679
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 679}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 328
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "财务部",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 680
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 680}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 328
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "科技部",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "系统优化",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 681
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 681}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 328
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "科技部",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "关联的应用系统",
-    "order_type": "新增需求",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 682
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 682}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 286
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "科技部",
-    "order_date": "2021-05-20",
-    "order_name": "测试需求名称",
-    "order_sys": "",
-    "order_type": "新增需求",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "000000",
-    "msg": "Success",
-    "order_id": 683
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000053{"code": "000000", "msg": "Success", "order_id": 683}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 286
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "综合办公室",
-    "order_date": "2021-05-20",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|   ERROR|SocketServer.py[:78]|需求名称必输.
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 60, in dologin
+    print(user_obj)
+BrokenPipeError: [Errno 32] Broken pipe
+2022-04-29 06:30:56|    INFO|testAction.py[:78]|response json: {'code': -1, 'msg': '[Errno 32] Broken pipe'}
+2022-04-29 06:30:56|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:30:56|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:30:56|   ERROR|testAction.py[:73]|[Errno 32] Broken pipe
 Traceback (most recent call last):
-  File "D:\PycharmProjects\testProject\testProject\SocketServer.py", line 61, in handle
-    raise RuntimeError("需求名称必输.")
-RuntimeError: 需求名称必输.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "500004",
-    "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000066{"code": "500004", "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 304
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "综合办公室",
-    "order_date": "2021-05-20",
-    "order_name": "",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
-2021-05-20 22:04:54|   ERROR|SocketServer.py[:78]|需求名称必输.
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 60, in dologin
+    print(user_obj)
+BrokenPipeError: [Errno 32] Broken pipe
+2022-04-29 06:30:56|    INFO|testAction.py[:78]|response json: {'code': -1, 'msg': '[Errno 32] Broken pipe'}
+2022-04-29 06:30:56|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:30:56|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:30:56|   ERROR|testAction.py[:73]|[Errno 32] Broken pipe
 Traceback (most recent call last):
-  File "D:\PycharmProjects\testProject\testProject\SocketServer.py", line 61, in handle
-    raise RuntimeError("需求名称必输.")
-RuntimeError: 需求名称必输.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:83]|应答报文体:
-{
-    "code": "500004",
-    "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."
-}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:85]|应答报文: 0000000066{"code": "500004", "msg": "\u9700\u6c42\u540d\u79f0\u5fc5\u8f93."}
-2021-05-20 22:04:54|    INFO|SocketServer.py[:88]|客户端发送完成，断开连接.
-2021-05-20 22:04:54|    INFO|SocketServer.py[:44]|请求报文长度: 307
-2021-05-20 22:04:54|    INFO|SocketServer.py[:53]|请求报文体:
-{
-    "order_dep": "综合办公室",
-    "order_date": "2021-05-20",
-    "order_name": "   ",
-    "order_sys": "关联的应用系统",
-    "order_type": "需求变更",
-    "order_desc": "需求描述内容具体的情况",
-    "service": "createOrder"
-}
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 60, in dologin
+    print(user_obj)
+BrokenPipeError: [Errno 32] Broken pipe
+2022-04-29 06:30:56|    INFO|testAction.py[:78]|response json: {'code': -1, 'msg': '[Errno 32] Broken pipe'}
+2022-04-29 06:33:48|   DEBUG|selector_events.py[:59]|Using selector: KqueueSelector
+2022-04-29 06:35:53| WARNING|log.py[:224]|Not Found: /
+2022-04-29 06:36:02|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:36:02|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:36:03|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:36:03|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:36:03|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:36:03|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:36:03|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:36:03|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:36:03|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:36:03|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:45:35|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:45:35|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:45:35|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:45:35|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:45:35|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:45:35|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:45:35|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:45:35|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:45:35|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:45:35|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:46:11|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:46:11|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:46:11|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:46:11|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:46:11|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:46:11|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:46:11|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:46:11|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:46:11|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:46:11|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:47:10|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:47:10|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:47:10|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:47:10|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:47:10|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:47:10|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:47:10|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:47:10|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:47:10|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:47:10|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:47:26|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:47:26|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:47:26|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:47:26|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:47:26|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:47:26|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:47:26|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:47:26|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:47:26|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:47:26|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:47:57|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:47:57|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:47:58|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:47:58|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:47:58|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:47:58|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:47:58|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:47:58|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:47:58|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:47:58|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:51:30|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:51:30|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:51:30|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:51:30|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:51:30|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:51:30|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:51:30|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:51:30|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:51:30|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:51:30|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:52:39|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:52:39|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:52:39|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:52:39|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:52:39|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:52:39|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:52:39|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:52:39|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:52:39|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:52:39|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:52:49|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:52:49|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:52:49|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:52:49|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:52:49|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:52:49|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:52:49|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:52:49|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:52:49|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:52:49|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:52:57|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:52:57|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:52:57|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:52:57|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:52:57|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:52:58|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:52:58|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:52:58|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:52:58|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:52:58|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:53:24|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:53:24|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:53:24|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:53:24|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:53:24|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:53:24|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:53:24|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:53:24|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:53:24|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:53:24|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:56:03|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:56:03|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:56:03|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:56:03|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:56:03|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:56:03|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:56:03|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:56:03|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:56:03|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:56:03|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 06:56:30|   DEBUG|testAction.py[:57]|admin
+2022-04-29 06:56:30|   DEBUG|testAction.py[:58]|123456
+2022-04-29 06:56:30|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:56:31|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:56:31|   DEBUG|testAction.py[:58]|111111
+2022-04-29 06:56:31|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 06:56:31|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 06:56:31|   DEBUG|testAction.py[:58]|123
+2022-04-29 06:56:31|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 06:56:31|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 07:00:12|   DEBUG|testAction.py[:57]|admin
+2022-04-29 07:00:12|   DEBUG|testAction.py[:58]|123456
+2022-04-29 07:00:13|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:00:13|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:00:13|   DEBUG|testAction.py[:58]|111111
+2022-04-29 07:00:13|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:00:13|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:00:13|   DEBUG|testAction.py[:58]|123
+2022-04-29 07:00:13|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 07:00:13|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 07:01:13|   DEBUG|testAction.py[:57]|admin
+2022-04-29 07:01:13|   DEBUG|testAction.py[:58]|123456
+2022-04-29 07:01:13|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:01:13|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:01:13|   DEBUG|testAction.py[:58]|111111
+2022-04-29 07:01:13|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:01:13|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:01:13|   DEBUG|testAction.py[:58]|123
+2022-04-29 07:01:13|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 07:01:13|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 07:01:46|   DEBUG|testAction.py[:57]|admin
+2022-04-29 07:01:46|   DEBUG|testAction.py[:58]|123456
+2022-04-29 07:01:46|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:01:46|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:01:46|   DEBUG|testAction.py[:58]|111111
+2022-04-29 07:01:46|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:01:46|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:01:46|   DEBUG|testAction.py[:58]|123
+2022-04-29 07:01:46|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 07:01:46|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 07:06:29|   DEBUG|testAction.py[:57]|admin
+2022-04-29 07:06:29|   DEBUG|testAction.py[:58]|123456
+2022-04-29 07:06:29|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:06:29|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:06:29|   DEBUG|testAction.py[:58]|111111
+2022-04-29 07:06:30|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:06:30|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:06:30|   DEBUG|testAction.py[:58]|123
+2022-04-29 07:06:30|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 07:06:30|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 07:09:55|   DEBUG|testAction.py[:57]|admin
+2022-04-29 07:09:55|   DEBUG|testAction.py[:58]|123456
+2022-04-29 07:09:55|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:09:55|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:09:55|   DEBUG|testAction.py[:58]|111111
+2022-04-29 07:09:55|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:09:55|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:09:55|   DEBUG|testAction.py[:58]|123
+2022-04-29 07:09:55|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+2022-04-29 07:09:55|    INFO|testAction.py[:78]|response json: {'code': 11, 'msg': '鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒'}
+2022-04-29 07:10:46|   DEBUG|testAction.py[:57]|admin
+2022-04-29 07:10:46|   DEBUG|testAction.py[:58]|123456
+2022-04-29 07:10:46|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:10:46|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:10:46|   DEBUG|testAction.py[:58]|111111
+2022-04-29 07:10:46|    INFO|testAction.py[:78]|response json: {'code': 0}
+2022-04-29 07:10:46|   DEBUG|testAction.py[:57]|sniper
+2022-04-29 07:10:46|   DEBUG|testAction.py[:58]|123
+2022-04-29 07:10:46|   ERROR|testAction.py[:73]|鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
+Traceback (most recent call last):
+  File "/Users/ziqguo/Documents/testdev/testProject/testProject/testAction.py", line 67, in dologin
+    raise RuntimeError("鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒")
+RuntimeError: 鐢ㄦ埛鍚嶆垨瀵嗙爜閿欒
